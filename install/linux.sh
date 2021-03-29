@@ -1,31 +1,31 @@
 #!/bin/bash
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
-apt udpate
-apt install software-properties-common
-add-apt-repository ppa:neovim-ppa/unstable
-apt-get -qq update
+apt -qq udpate
+apt install -y software-properties-common
+# add-apt-repository ppa:neovim-ppa/unstable
+# apt -qq update
 printf "${GREEN}DONE!${NORMAL}\n"
 
 
-printf "${CYAN}Install apps from apt-get...${NORMAL}\n"
-apt-get -qqy install python
-apt-get -qqy install python3
-apt-get -qqy install vim
-apt-get -qqy install tmux
-apt-get -qqy install cmake
+printf "${CYAN}Install apps from apt...${NORMAL}\n"
+apt -qqy install python
+apt -qqy install python3
+apt -qqy install vim
+apt -qqy install tmux
+apt -qqy install cmake
 
-apt-get -qqy install software-properties-common
-apt-get -qqy install python-software-properties
-apt-get -qqy install python-dev
-apt-get -qqy install python-pip
-apt-get -qqy install python3-dev
-apt-get -qqy install python3-pip
-apt-get -qqy install silversearcher-ag
+apt -qqy install software-properties-common
+apt -qqy install python-software-properties
+apt -qqy install python-dev
+apt -qqy install python-pip
+apt -qqy install python3-dev
+apt -qqy install python3-pip
+apt -qqy install silversearcher-ag
 
-apt-get -qqy install curl
-apt-get -qqy install xclip
-# apt-get -qqy install zsh
-apt-get -qqy install git-extras
+apt -qqy install curl
+apt -qqy install xclip
+# apt -qqy install zsh
+apt -qqy install git-extras
 pip3 install --upgrade neovim
 
 pip3 install pynvim
@@ -34,11 +34,11 @@ pip3 install pynvim
 # cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 # cd -
 
-# touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
-# cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
-#
-# apt update
-# apt-get -qqy -t testing install neovim
+touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
+cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
+
+apt update
+apt -qqy -t testing install neovim
 pip3 install -U setuptools
 pip3 install -U pynvim
 
