@@ -2,7 +2,7 @@
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
 apt -qq udpate
 apt install -y software-properties-common
-add-apt-repository ppa:neovim-ppa/unstable
+add-apt-repository -y ppa:neovim-ppa/unstable
 apt -qq update
 printf "${GREEN}DONE!${NORMAL}\n"
 
@@ -15,7 +15,7 @@ apt -qqy install tmux
 apt -qqy install cmake
 
 apt -qqy install software-properties-common
-apt -qqy install python-software-properties
+# apt -qqy install python-software-properties
 apt -qqy install python-dev
 apt -qqy install python-pip
 apt -qqy install python3-dev
@@ -35,7 +35,7 @@ pip3 install pynvim
 # cd -
 
 
-apt -qqy -t testing install neovim
+apt -qqy install neovim
 pip3 install -U setuptools
 pip3 install -U pynvim
 

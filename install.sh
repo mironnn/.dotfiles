@@ -46,10 +46,10 @@ get_os_and_version
 
 printf "OS: ${OS} ${VER}"
 
-if [ "$(OS)" = 'Debian' ]; then
+if [ "${OS}" = 'Debian' ]; then
   printf "Platform Debian\n"
   source install/debian.sh
-elif [ "$(OS)" = 'Ubuntu' ]; then
+elif [ "${OS}" = 'Ubuntu' ]; then
   printf "Platform Ubuntu\n"
   source install/ubuntu.sh
 elif [ "$(uname)" = 'Darwin' ]; then
