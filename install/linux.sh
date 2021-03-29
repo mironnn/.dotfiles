@@ -1,30 +1,30 @@
 #!/bin/bash
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get -qq update
+add-apt-repository ppa:neovim-ppa/unstable
+apt-get -qq update
 printf "${GREEN}DONE!${NORMAL}\n"
 
 
 printf "${CYAN}Install apps from apt-get...${NORMAL}\n"
-sudo apt-get -qqy install python
-sudo apt-get -qqy install python3
-sudo apt-get -qqy install vim
-sudo apt-get -qqy install tmux
-sudo apt-get -qqy install cmake
+apt-get -qqy install python
+apt-get -qqy install python3
+apt-get -qqy install vim
+apt-get -qqy install tmux
+apt-get -qqy install cmake
 
-sudo apt-get -qqy install software-properties-common
-sudo apt-get -qqy install python-software-properties
-sudo apt-get -qqy install neovim
-sudo apt-get -qqy install python-dev
-sudo apt-get -qqy install python-pip
-sudo apt-get -qqy install python3-dev
-sudo apt-get -qqy install python3-pip
-sudo apt-get -qqy install silversearcher-ag
+apt-get -qqy install software-properties-common
+apt-get -qqy install python-software-properties
+apt-get -qqy install neovim
+apt-get -qqy install python-dev
+apt-get -qqy install python-pip
+apt-get -qqy install python3-dev
+apt-get -qqy install python3-pip
+apt-get -qqy install silversearcher-ag
 
-sudo apt-get -qqy install curl
-sudo apt-get -qqy install xclip
-# sudo apt-get -qqy install zsh
-sudo apt-get -qqy install git-extras
+apt-get -qqy install curl
+apt-get -qqy install xclip
+# apt-get -qqy install zsh
+apt-get -qqy install git-extras
 pip3 install --upgrade neovim
 
 pip3 install pynvim
