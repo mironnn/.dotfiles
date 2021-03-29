@@ -48,6 +48,9 @@
 #   name = "lang#markdown"
 
 [[layers]]
+    name = "tools"
+
+[[layers]]
     name = "denite"
 
 [[layers]]
