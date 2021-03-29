@@ -44,8 +44,8 @@
   lint_on_the_fly = false
   show_cursor_error = true
 
-[[layers]]
-  name = "lang#markdown"
+# [[layers]]
+#   name = "lang#markdown"
 
 [[layers]]
     name = "denite"

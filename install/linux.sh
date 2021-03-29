@@ -1,5 +1,7 @@
 #!/bin/bash
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
+apt udpate
+apt install software-properties-common
 add-apt-repository ppa:neovim-ppa/unstable
 apt-get -qq update
 printf "${GREEN}DONE!${NORMAL}\n"
@@ -31,11 +33,12 @@ pip3 install pynvim
 # mkdir -p ~/.local/share/fonts
 # cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 # cd -
-touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
-cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
 
-apt update
-apt-get -qqy -t testing install neovim
+# touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
+# cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
+#
+# apt update
+# apt-get -qqy -t testing install neovim
 pip3 install -U setuptools
 pip3 install -U pynvim
 
