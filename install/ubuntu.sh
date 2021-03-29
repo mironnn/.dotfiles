@@ -9,6 +9,7 @@ printf "${GREEN}DONE!${NORMAL}\n"
 
 printf "${CYAN}Install apps from apt...${NORMAL}\n"
 apt -qqy install python
+apt -qqy install exuberant-ctags
 apt -qqy install python3
 apt -qqy install vim
 apt -qqy install tmux

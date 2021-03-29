@@ -7,6 +7,7 @@ YELLOW='\033[0;33m'
 SCRIPTPATH=`pwd -P`
 
 
+DEBIAN_FRONTEND=noninteractive
 printf "${CYAN}Installation for started\n${NORMAL}"
 
 function get_os_and_version(){
