@@ -1,5 +1,7 @@
 #!/bin/bash
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
+
+export DEBIAN_FRONTEND=noninteractive
 apt -qq udpate
 apt install -y software-properties-common
 # add-apt-repository ppa:neovim-ppa/unstable
