@@ -7,15 +7,14 @@ YELLOW='\033[0;33m'
 SCRIPTPATH=`pwd -P`
 
 
-DEBIAN_FRONTEND=noninteractive
-printf "${CYAN}Installation for started\n${NORMAL}"
+printf "${CYAN}Installation started\n${NORMAL}"
 
 function get_os_and_version(){
  
   if [ -f /etc/os-release ]; then
     # freedesktop.org and systemd
     . /etc/os-release
-    OS=$NAME
+    OS=${NAME%% *}
     VER=$VERSION_ID
   elif type lsb_release >/dev/null 2>&1; then
       # linuxbase.org
