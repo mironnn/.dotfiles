@@ -44,11 +44,8 @@
   lint_on_the_fly = false
   show_cursor_error = true
 
-# [[layers]]
-#   name = "lang#markdown"
-
 [[layers]]
-    name = "tools"
+  name = "lang#markdown"
 
 [[layers]]
     name = "denite"
@@ -58,6 +55,7 @@
 
 [[custom_plugins]]
     repo = "907th/vim-auto-save"
+    repo = "tmhedberg/simpylfold"
 
 
 [[layers]]
@@ -69,6 +67,13 @@
     name = "shell"
     default_position = "bottom"
     default_height = 25
+
+[[layers]]
+  name = "tools"
+
+[[layers]]
+  name = "lang#c"
+
 
 [[layers]]
     name = "lang#python"
