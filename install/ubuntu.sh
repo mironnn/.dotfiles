@@ -39,7 +39,7 @@ pip3 install pynvim
 
 apt -qqy install neovim
 pip3 install -U setuptools
-pip3 install -U pynvim
+pip3 install -U pynvim jedi
 
 
 curl -sLf https://spacevim.org/install.sh | bash
