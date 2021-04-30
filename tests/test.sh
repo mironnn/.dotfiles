@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-docker ps
+docker run --rm -it ubuntu bash -c "uname"
