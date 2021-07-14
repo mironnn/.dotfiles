@@ -1,7 +1,7 @@
 # dotfiles
 
 ```bash
-  cd /root && git clone http://github.com/mironnn/dotfiles.git && cd dotfiles &&  ./install.sh
+  cd /root && git clone http://github.com/mironnn/.dotfiles.git && cd .dotfiles &&  ./install.sh
 ```
 
 for installation inside DOCKER run

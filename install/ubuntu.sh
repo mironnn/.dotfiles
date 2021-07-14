@@ -28,9 +28,16 @@ $sudo_var apt -qqy install neovim
 $sudo_var pip3 install -U setuptools pynvim jedi
 
 
+cd
+# nvim
 curl -sLf https://spacevim.org/install.sh | bash
 
 cd ${SCRIPTPATH}
 cp -R ./src/SpaceVim.d/ ~/.SpaceVim.d/
+
+# tmux
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp ./src/tmux/.tmux.conf.local ~/
 
 printf "${GREEN}DONE!${NORMAL}\n"
