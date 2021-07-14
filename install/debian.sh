@@ -28,9 +28,8 @@ $sudo_var cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/a
 
 $sudo_var apt update
 $sudo_var apt -qqy -t testing install neovim
-$sudo_var pip3 install -U setuptools
+$sudo_var pip3 install -U setuptools pynvim
 $sudo_var apt autoclean
-# pip3 install -U pynvim
 
 
 curl -sLf https://spacevim.org/install.sh | bash
