@@ -2,36 +2,22 @@
 printf "${CYAN}Apt-get updating...${NORMAL}\n"
 
 export DEBIAN_FRONTEND=noninteractive
-apt -qq udpate
-apt install -y software-properties-common
+$sudo_var apt -qq udpate
+$sudo_var apt install -y software-properties-common
 # add-apt-repository ppa:neovim-ppa/unstable
 # apt -qq update
 printf "${GREEN}DONE!${NORMAL}\n"
 
 
 printf "${CYAN}Install apps from apt...${NORMAL}\n"
-apt -qqy install python
-apt -qqy install python3
-apt -qqy install exuberant-ctags
-apt -qqy install vim
-apt -qqy install tmux
-apt -qqy install cmake
+$sudo_var apt -qqy install python3 exuberant-ctags vim tmux cmake \
+  python3-dev python3-pip software-properties-common \
+  python-software-properties silversearcher-ag curl xclip \
+  wget telnet git git-extras
 
-apt -qqy install software-properties-common
-apt -qqy install python-software-properties
-apt -qqy install python-dev
-apt -qqy install python-pip
-apt -qqy install python3-dev
-apt -qqy install python3-pip
-apt -qqy install silversearcher-ag
 
-apt -qqy install curl
-apt -qqy install xclip
 # apt -qqy install zsh
-apt -qqy install git-extras
-pip3 install --upgrade neovim
-
-pip3 install pynvim
+$sudo_var pip3 install --upgrade neovim pynvim
 
 # mkdir -p ~/.local/share/fonts
 # cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
@@ -40,10 +26,10 @@ pip3 install pynvim
 touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
 cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
 
-apt update
-apt -qqy -t testing install neovim
-pip3 install -U setuptools
-pip3 install -U pynvim
+$sudo_var apt update
+$sudo_var apt -qqy -t testing install neovim
+$sudo_var pip3 install -U setuptools
+# pip3 install -U pynvim
 
 
 curl -sLf https://spacevim.org/install.sh | bash
