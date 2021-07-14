@@ -12,7 +12,7 @@ printf "${GREEN}DONE!${NORMAL}\n"
 printf "${CYAN}Install apps from apt...${NORMAL}\n"
 $sudo_var apt -qqy install python3 exuberant-ctags vim tmux cmake \
   python3-dev python3-pip software-properties-common \
-  python-software-properties silversearcher-ag curl xclip \
+  silversearcher-ag curl xclip \
   wget telnet git git-extras
 
 
@@ -23,8 +23,8 @@ $sudo_var pip3 install --upgrade neovim pynvim
 # cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 # cd -
 
-touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
-cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
+$sudo_var touch /etc/apt/apt.conf.d/99defaultrelease && echo "APT::Default-Release "stable";" > /etc/apt/apt.conf.d/99defaultrelease
+$sudo_var cp ${SCRIPTPATH}/src/stable.list ${SCRIPTPATH}/src/testing.list /etc/apt/sources.list.d/
 
 $sudo_var apt update
 $sudo_var apt -qqy -t testing install neovim

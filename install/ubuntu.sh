@@ -10,7 +10,7 @@ printf "${GREEN}DONE!${NORMAL}\n"
 
 printf "${CYAN}Install apps from apt...${NORMAL}\n"
 $sudo_var apt -qqy install python3 exuberant-ctags vim tmux cmake \
-  software-properties-common python3-dev python3-pip \
+  python3-dev python3-pip \
   silversearcher-ag curl xclip git git-extras python3-testresources
 
 # apt -qqy install python-software-properties
