@@ -102,11 +102,11 @@ tmux_conf_theme_pane_border_style=thin
 
 # pane borders colours:
 tmux_conf_theme_pane_border="$tmux_conf_theme_colour_2"
-tmux_conf_theme_pane_active_border="$tmux_conf_theme_colour_4"
+tmux_conf_theme_pane_active_border="$tmux_conf_theme_colour_3"
 
 # pane indicator colours (when you hit <prefix> + q)
-tmux_conf_theme_pane_indicator="$tmux_conf_theme_colour_4"
-tmux_conf_theme_pane_active_indicator="$tmux_conf_theme_colour_4"
+tmux_conf_theme_pane_indicator="$tmux_conf_theme_colour_3"
+tmux_conf_theme_pane_active_indicator="$tmux_conf_theme_colour_3"
 
 # status line style
 tmux_conf_theme_message_fg="$tmux_conf_theme_colour_1"
@@ -168,7 +168,7 @@ tmux_conf_theme_window_status_format="#I #W"
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_window_status_current_fg="$tmux_conf_theme_colour_1"
-tmux_conf_theme_window_status_current_bg="$tmux_conf_theme_colour_4"
+tmux_conf_theme_window_status_current_bg="$tmux_conf_theme_colour_3"
 tmux_conf_theme_window_status_current_attr="bold"
 tmux_conf_theme_window_status_current_format="#I #W"
 #tmux_conf_theme_window_status_current_format="#{circled_window_index} #W"
@@ -185,7 +185,7 @@ tmux_conf_theme_window_status_bell_bg="default"
 tmux_conf_theme_window_status_bell_attr="blink,bold"
 
 # window last status style
-tmux_conf_theme_window_status_last_fg="$tmux_conf_theme_colour_4"
+tmux_conf_theme_window_status_last_fg="$tmux_conf_theme_colour_3"
 tmux_conf_theme_window_status_last_bg="$tmux_conf_theme_colour_2"
 tmux_conf_theme_window_status_last_attr="none"
 
@@ -313,7 +313,7 @@ tmux_conf_battery_status_discharging="↓"    # U+2193
 
 # clock style (when you hit <prefix> + t)
 # you may want to use %I:%M %p in place of %R in tmux_conf_theme_status_right
-tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_4"
+tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_3"
 tmux_conf_theme_clock_style="24"
 
 
