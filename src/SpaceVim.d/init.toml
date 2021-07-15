@@ -90,6 +90,6 @@
 
 [[layers]]
     name = "gtags"
-    gtagslabel = "pygments"
+    gtagslabel = "u-ctags"
 
 
