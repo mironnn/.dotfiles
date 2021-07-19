@@ -55,13 +55,15 @@
 
 [[custom_plugins]]
     repo = "907th/vim-auto-save"
-    repo = "tmhedberg/simpylfold"
+    merged = true
 
+[[custom_plugins]]
+    repo = "tmhedberg/simpylfold"
+    merged = true
 
 [[layers]]
     name = 'core'
     filetree_show_hidden = true
-
 
 [[layers]]
     name = "shell"
