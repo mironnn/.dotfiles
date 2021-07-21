@@ -32,6 +32,7 @@
     # search_tools = ["rg"]
     bootstrap_before = 'myspacevim#before'
     lint_engine = 'neomake'
+    sidebar_width = 40
 
 # Enable autocomplete layer
 [[layers]]
