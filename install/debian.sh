@@ -13,7 +13,7 @@ printf "${CYAN}Install apps from apt...${NORMAL}\n"
 $sudo_var apt -qqy install python3 exuberant-ctags vim tmux cmake \
   python3-dev python3-pip software-properties-common \
   silversearcher-ag curl xclip \
-  wget telnet git git-extras
+  wget telnet git git-extras python3-venv
 
 
 # apt -qqy install zsh

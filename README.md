@@ -18,3 +18,7 @@ e.g.
 
 # TODO
 - add `ll` alias
+- add zsh and ohmyzsh
+- move to arhive or clenup old .Spacevim .Spacevim.d .cache .vimrc
+- add `activate` for python venv
+- think how to add tests
