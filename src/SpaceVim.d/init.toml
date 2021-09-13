@@ -11,6 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
+    project_rooter_automatically = false
     colorscheme = "gruvbox"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
@@ -67,11 +68,6 @@
     filetree_show_hidden = true
 
 [[layers]]
-    name = "shell"
-    default_position = "bottom"
-    default_height = 25
-
-[[layers]]
   name = "tools"
 
 [[layers]]
@@ -94,5 +90,4 @@
 [[layers]]
     name = "gtags"
     gtagslabel = "u-ctags"
-
 
