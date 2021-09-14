@@ -78,6 +78,7 @@
     name = "lang#python"
     enable_typeinfo = false
     lint_on_the_fly = true
+    python_file_head = [""]
 
 [[layers]]
     name = "lang#dockerfile"
